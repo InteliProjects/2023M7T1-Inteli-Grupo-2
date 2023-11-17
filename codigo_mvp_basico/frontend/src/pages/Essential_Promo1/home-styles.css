@@ -1,0 +1,364 @@
+.custom-rectangle { /* Mudando a classe "rectangle" para "custom-rectangle" */
+  width: 1250px;
+  height: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 50px;
+}
+
+.custom-larger-text { /* Mudando a classe "larger-text_essential" para "custom-larger-text_essential" */
+  font-size: 25px;
+  margin-left: 0px;
+  margin-top: -5px;
+}
+
+.custom-larger-text2 { /* Mudando a classe "larger-text_essential2" para "custom-larger-text_essential2" */
+  font-size: 25px;
+  margin-left: 0px;
+}
+
+.custom-larger-text3 { /* Mudando a classe "larger-text3" para "custom-larger-text3" */
+  font-size: 25px;
+}
+
+.nimbbbus-text {
+  color: #00A868;
+  margin-right: auto;
+}
+
+.custom-user-circle { /* Mudando a classe "user-circle" para "custom-user-circle" */
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/user.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 1000px;
+  border: #000 2px solid;
+}
+
+.custom-additional-rectangle1 { /* Mudando a classe "additional-rectangle1" para "custom-additional-rectangle1" */
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+}
+
+.custom-additional-rectangle2 { /* Mudando a classe "additional-rectangle2" para "custom-additional-rectangle2" */
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-additional-rectangle3 { /* Mudando a classe "additional-rectangle3" para "custom-additional-rectangle3" */
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.custom-text { /* Mudando a classe "text" para "custom-text" */
+  font-size: 30px;
+  color: #00A868;
+  margin-left: 500px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.custom-subtext { /* Mudando a classe "subtext" para "custom-subtext" */
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 500px;
+}
+
+.custom-price-home { /* Mudando a classe "price-home" para "custom-price-home" */
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 500px;
+  word-wrap: break-word;
+}
+
+.custom-bold-text { /* Mudando a classe "bold-text" para "custom-bold-text" */
+  font-weight: bold;
+}
+
+.custom-bold-price { /* Mudando a classe "bold-price" para "custom-bold-price" */
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.custom-button-container { /* Mudando a classe "button-container" para "custom-button-container" */
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 100px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.custom-essential-pro { /* Mudando a classe "essential-pro" para "custom-essential-pro" */
+  font-size: 30px;
+  color: #00A868;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.custom-subtext2 { /* Mudando a classe "subtext2" para "custom-subtext2" */
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  top: 120px;
+  left: 22px;
+}
+
+.custom-price-info { /* Mudando a classe "price-info" para "custom-price-info" */
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  top: 160px;
+  left: 23px;
+}
+
+.custom-bold-text2 { /* Mudando a classe "bold-text2" para "custom-bold-text2" */
+  font-weight: bold;
+}
+
+.custom-bold-price2 { /* Mudando a classe "bold-price2" para "custom-bold-price2" */
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.custom-button-container2 { /* Mudando a classe "button-container2" para "custom-button-container2" */
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  height: 50px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.custom-flex-text { /* Mudando a classe "flex-text" para "custom-flex-text" */
+  position: absolute;
+  top: 950px;
+  right: 375px;
+  font-size: 30px;
+  color: #00A868;
+}
+
+.custom-subtext3 { /* Mudando a classe "subtext3" para "custom-subtext3" */
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  top: 1050px;
+  left: 765px;
+}
+
+.custom-taxas-flexiveis { /* Mudando a classe "taxas-flexiveis" para "custom-taxas-flexiveis" */
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 1110px;
+  right: 335px;
+}
+
+.custom-button-container3 { /* Mudando a classe "button-container3" para "custom-button-container3" */
+  cursor: pointer;
+  position: absolute;
+  top: 1200px;
+  right: 335px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.custom-ton-image { /* Mudando a classe "ton-image" para "custom-ton-image" */
+  position: absolute;
+  left: 30px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.custom-clickable-text { /* Mudando a classe "clickable-text" para "custom-clickable-text" */
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 25px;
+  color: #00A868;
+}
+
+.custom-stone-image { /* Mudando a classe "stone-image" para "custom-stone-image" */
+  position: absolute;
+  margin-left: 540px;
+  margin-top: 30px;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.custom-clickable-text2 { /* Mudando a classe "clickable-text2" para "custom-clickable-text2" */
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 460px;
+  color: #00A868;
+}
+
+.custom-clickable-text3 { /* Mudando a classe "clickable-text3" para "custom-clickable-text3" */
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 295px;
+  color: #00A868;
+}
+
+.custom-stone-image2 { /* Mudando a classe "stone-image2" para "custom-stone-image2" */
+  position: absolute;
+  margin-left: 30px;
+  top: 1050px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.smaller-text {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .custom-rectangle { /* Mudando a classe "rectangle" para "custom-rectangle" */
+    width: 100%;
+    padding: 0 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nimbbbus-text {
+    margin: 0;
+  }
+
+  .custom-user-circle { /* Mudando a classe "user-circle" para "custom-user-circle" */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .custom-additional-rectangle1,
+  .custom-additional-rectangle2,
+  .custom-additional-rectangle3 {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-text,
+  .custom-subtext,
+  .custom-price-home,
+  .custom-essential-pro,
+  .custom-subtext2,
+  .custom-price-info,
+  .custom-flex-text,
+  .custom-subtext3,
+  .custom-taxas-flexiveis {
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+
+  .custom-button-container,
+  .custom-button-container2,
+  .custom-button-container3 {
+    margin: 10px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  br {
+    display: block;
+  }
+
+  .custom-ton-image,
+  .custom-stone-image,
+  .custom-stone-image2 {
+    width: 120px;
+    position: relative;
+    margin: 0 0;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .custom-clickable-text,
+  .custom-clickable-text2,
+  .custom-clickable-text3 {
+    margin: 5px;
+  }
+
+  .custom-essential-pro, .custom-subtext2, .custom-price-info, .custom-flex-text, .custom-subtext3, .custom-taxas-flexiveis {
+    top: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+}

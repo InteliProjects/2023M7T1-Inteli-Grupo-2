@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solução em nuvem | nimBBBus </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #F2F4F7;           
+        }
+
+        header {
+            background-color: white;
+            padding: 0.5% 9%;
+            border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+        }
+
+        .navbar {
+            display: flex;  
+            flex-direction: row;
+            align-items: center;
+            margin: auto;
+            width: 100%;
+        }
+
+        .navbar p {
+            margin: 0;
+        }
+
+        .top-options {
+            visibility: visible;
+        }
+
+        #items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 20px 0;
+            width: 50%;
+            gap: 20px;
+            justify-content: flex-start;
+        }
+
+        #turn-member {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 20px 0;
+            gap: 20px;
+            width: 50%;
+            justify-content: flex-end;
+        }
+
+        #login {
+            display: flex;
+            background-color: white;
+            color: black;
+            font-weight: 500;
+            padding: 6px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: 102px;
+            height: 38px;
+            border-radius: 46px;
+            border: rgba(0, 0, 0, 0.5) 1px solid;
+            transition: box-shadow 0.2s ease;
+        }
+
+        #login:hover {
+            background-color: rgb(189, 244, 252);
+            box-shadow: 0 0 7px 4px #a9ebf5;
+        }
+
+        .register{
+            display: flex;
+            background-color: #00A868;
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: fit-content;
+            height: 38px;
+            border-radius: 46px;
+            transition: box-shadow 0.2s ease;
+        }
+
+        #top-link {
+            padding: 6px
+        }
+
+        .register:hover{
+            background-color: #00975d;
+            box-shadow: 0 0 7px 4px #a9ebf5;
+        }
+
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #green-background {
+            background-color: #00975d;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .image {
+            display: block;
+            flex-shrink: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #top-of-all {
+            background-image: url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/initial-photo.jpg);
+            width: 80%;
+            height: 600px;
+            border-radius: 0px 0px 18px 18px;  
+        }
+
+        #only-small {
+            display: none;
+        }
+
+        #border {
+            height: 85%;
+            margin: 30px;
+            border: #00A868 10px solid;
+            border-radius: 18px;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        #green-square {
+            width: 450px;
+            height: 50vh;
+            background-color: #00A868;
+            border-radius: 0px 18px 0px 0px;
+            padding: 20px 0 0 20px;
+        }
+
+        .initial-phrase {
+            color: white;
+            font-weight: 300;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        #bold-initial-phrase {
+            color: white;
+            margin: 0;
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        #initial-text {
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 10px 0 25px 0;
+        }
+
+        #white-link {
+            background-color: white;
+            color: black;
+            transition: box-shadow 0.2s ease;
+        }
+
+        @media (min-width: 850px) and (max-width: 1250px) {
+            
+            .top-options {
+                display: none;
+            }
+
+            #green-square {
+                width: 350px;
+                height: 40vh;
+            }
+
+            .initial-phrase {
+                font-size: 27px;
+            }
+
+            #bold-initial-phrase {
+                font-size: 27px;
+            }
+            
+            #initial-text {
+                font-size: 17px;
+                margin: 10px 0 15px 0;
+            }
+
+            #white-link {
+                height: 25px;
+            }
+
+        }
+
+        @media (max-width: 850px) {
+            .top-options {
+                display: none;
+            }
+
+            #header {
+                padding: 0.5% 9%;
+            }
+
+            #turn-member {
+                padding: 0;
+            }
+
+            #login {
+                padding: 2px;
+            }
+
+            #top-link {
+                padding: 2px;
+                height: 39px;
+            }
+
+            #top-of-all {
+                display: none;
+            }
+
+            #only-small {
+                display: flex;
+                flex-direction: column;
+                background-color: #00975d;
+                width: 80%;
+                height: 600px;
+                border-radius: 0px 0px 18px 18px;  
+            }
+
+            #mini-img {
+                display: flex;
+                justify-content: center;
+            }
+
+            #mini-txt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            #initial-text {
+                text-align: center;
+                font-size: 17px;
+                width: 60vw;
+                margin: 20px 0 30px 0;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 850px) {
+            #mini-img img {
+                margin: 12px 0 12px;
+                width: 350px;
+                height: 271.5px;
+                border-radius: 9px;
+            }
+
+            .initial-phrase {
+                font-size: 25px;
+            }
+            
+            #bold-initial-phrase {
+                font-size: 35px;
+            }
+        }
+
+        @media (max-width: 499.9px) {
+            #mini-img img {
+                margin-top: 20px;
+                width: 70vw;
+                height: 52.5vw;
+            }
+
+            .initial-phrase {
+                font-size: 18px;
+                text-align: center;
+            }
+            
+            #bold-initial-phrase {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            #only-small {
+                gap: 3vh;
+            }
+        }
+
+        #white-link:hover {
+            background-color: rgb(189, 244, 252);
+            box-shadow: 0 0 7px 4px #a9ebf5;
+        }
+
+        #big-txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #slogan {
+            font-weight: 500;
+            margin: 130px 0px 40px;
+        }
+
+        .options {
+            display: flex;
+            width: 430px;
+            height: 80px;
+            border-radius: 250px;
+            background-color: rgb(219, 221, 223);
+            flex-direction: row;
+            gap: 14px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .options button {
+            background: none;
+            border: none;
+            font-size: 15px;
+            color: rgb(76, 76, 77);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #option1 {
+            background-color: white; 
+            color: #00A868; 
+            border-radius: 46px; 
+            height: 60px;
+        }
+
+        #option3 {
+            width: 60px;
+        }
+
+        #image-big-options {
+            width: 55%;
+            height: 450px;
+            background-image: url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/card-machine.jpg);
+            border-radius: 18px;
+            margin-bottom: 130px;    
+        }
+
+        #description-options {
+            background-color: rgb(255, 255, 255, 1);
+            width: 230px;
+            height: 30vh;
+            padding: 15px;
+            border-radius: 9px;
+            margin: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .name-payment {
+            font-family: 'Oswald', sans-serif;
+            color: #017649;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .text-payment-h {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .text-payment-p {
+            margin: -10px 0 0 0;
+            font-size: 14px;
+        }
+
+        #register-payment {
+            display: flex;
+            padding: 6px;
+            font-size: 13px;
+            height: 20px;
+            justify-content: flex-end;
+        }
+
+        #gray-block {
+            display: none;
+        }
+
+        @media (min-width: 1070px) and (max-width: 1400px) {
+            #slogan {
+                font-size: 27px;
+                margin-top: 75px;
+            }
+
+            #image-big-options{
+                width: 70vw; 
+            }   
+
+            #gray-block {
+                display: none;
+            }
+
+            #image-big-options {
+                margin-bottom: 75px;
+            }
+        }
+
+        @media (max-width: 1070px) {
+
+            #slogan {
+                font-size: 24px;
+                width: 80%;
+                margin-top: 37px;
+            }
+
+            #image-big-options {
+                display: none;
+            }
+
+            #description-options {
+                display: none;
+            }
+
+            #gray-block {
+                display: flex;
+                width: 80%;
+                background-color: rgb(191, 195, 200);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                padding: 20px;
+                margin-bottom: 60px;
+            }
+
+            #gray-block img {
+                width: 500px;
+                border-radius: 10px;
+            }
+            
+            #mini-description-options{
+                background-color: rgb(255, 255, 255, 1);
+                width: 470px;
+                padding: 15px;
+                border-radius: 10px;
+                margin: 20px 0 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+        }
+
+        @media (max-width: 642px) {
+            #slogan {
+                font-size: 22px;
+                width: 80%
+            }
+
+            #gray-block img {
+                width: 100%;
+            }
+            
+            #mini-description-options{
+                width: 95%;
+            }
+
+            .options {
+                width: 320px;
+                height: 60px;
+                justify-content: space-between;
+                padding: 0px 10px;
+            }
+
+            .options button {
+                font-size: 12px;
+            }
+
+            #option1 {
+                height: 40px;
+            }
+        }
+
+        #photos-and-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scenario {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 130px;
+        }
+
+
+        .text-scenario {
+            width: 41rem;
+            height: fit-content;
+        }
+
+        #photo1 {
+            background-image: url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/cloud.jpg);
+            width: 46%;
+            height: 327px;
+            border-radius: 18px;
+        }
+
+        #photo2 {
+            background-image: url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/little-coffee.jpg);
+            width: 45%;
+            height: 289px;
+            border-radius: 18px;
+        }
+
+        .just-small {
+            display: none;
+        }
+
+        @media (max-width: 850px) {
+            .scenario {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .name-payment {
+                margin-bottom: -15px
+            }
+
+            #little-coffe{
+                flex-direction: column-reverse;
+            }
+
+            .text-scenario {
+                width: 60%;
+                text-align: center;
+            }
+
+            .text-scenario a {
+                margin: 40px auto 0;
+            }
+
+            #photo1 {
+                width: 60%;
+            }
+
+            #photo2 {
+                width: 60%; 
+            }
+
+            .just-small {
+                display: block;
+            }
+
+            .just-big {
+                display: none;
+            }
+
+            .small-button {
+                width: 40%;
+            }
+        }
+
+        footer {
+            background-color: rgba(32,37,42);
+            padding: 0.5% 9%;
+        }
+
+        #footer {
+            display: flex;
+            flex: row;
+            align-items: center;
+            width: 100%;
+        }
+
+        #stone-footer {
+            display: flex;
+            width: 50%;
+            justify-content: flex-start;
+        }
+
+        #social-media {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            gap: 30px;
+            justify-content: flex-end;
+        }
+
+        #social-media a {
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 850px) {
+            #social-media {
+                gap: 24px;
+            }
+
+            #social-media a {
+                font-size: 20px;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div id="items">
+                <a href="https://stone.com.br" target="_blank"> 
+                    <svg width="92" height="28" viewBox="0 0 944 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M532.608 243.535H574.731C575.141 243.564 575.552 243.51 575.94 243.376C576.328 243.241 576.684 243.029 576.988 242.753C577.291 242.477 577.534 242.142 577.704 241.769C577.873 241.396 577.965 240.993 577.973 240.583V124.561C577.973 91.6608 594.18 74.325 622.161 74.325C650.142 74.325 666.053 91.6608 666.053 124.561V240.598C666.061 241.007 666.153 241.411 666.322 241.784C666.492 242.157 666.735 242.492 667.038 242.768C667.342 243.044 667.698 243.256 668.086 243.39C668.474 243.525 668.885 243.579 669.295 243.55H711.418C711.828 243.579 712.239 243.525 712.627 243.39C713.015 243.256 713.371 243.044 713.675 242.768C713.978 242.492 714.222 242.157 714.391 241.784C714.56 241.411 714.652 241.007 714.66 240.598V124.856C714.66 75.2033 686.975 31.7273 622.154 31.7273C557.333 31.7273 529.366 75.2033 529.366 124.856V240.598C529.376 241.006 529.469 241.408 529.639 241.779C529.81 242.151 530.054 242.484 530.357 242.758C530.66 243.033 531.015 243.243 531.402 243.377C531.789 243.51 532.199 243.564 532.608 243.535Z" fill="#00A868"/>
+                        <path d="M242.736 246.184C258.055 246.184 268.068 244.42 272.486 242.657C273.145 242.394 273.716 241.952 274.134 241.38C274.551 240.808 274.799 240.13 274.847 239.424V204.738C274.847 202.679 273.959 201.505 271.31 201.505C269.245 201.505 263.354 202.679 258.64 202.679C240.375 202.679 232.427 195.926 232.427 180.059V82.2582H271.31C272.167 82.2505 272.987 81.9075 273.593 81.303C274.199 80.6984 274.543 79.8807 274.551 79.0258V41.1291C274.543 40.2742 274.199 39.4565 273.593 38.8519C272.987 38.2474 272.167 37.9044 271.31 37.8967H230.955V4.9963C230.955 1.46863 229.474 0 226.825 0H187.055C183.821 0 182.348 1.47601 182.348 4.9963V185.07C182.348 228.849 206.792 246.184 242.736 246.184Z" fill="#00A868"/>
+                        <path d="M73.6571 248.53C121.087 248.53 154.966 219.446 154.966 181.549C154.966 138.951 126.682 126.619 88.0955 118.39L68.943 114.28C54.5121 111.047 46.5565 104.287 46.5565 92.8332C46.5565 78.1469 61.2835 70.2133 81.6127 70.2133C110.186 70.2133 129.627 83.1358 132.572 83.1358C133.391 83.0816 134.18 82.8073 134.855 82.3422C135.53 81.877 136.066 81.2383 136.406 80.4938L144.065 51.9993C145.546 48.1764 145.242 47.2982 142.585 45.8296C125.498 37.0178 107.233 32.0215 81.3092 32.0215C33.2948 32.0215 0 59.6377 0 96.3609C0 131.047 26.812 150.117 65.1244 158.353L84.5655 162.464C100.18 165.697 108.987 171.866 108.987 185.084C108.987 198.597 98.3822 210.346 73.3389 210.346C37.9867 210.346 13.8315 196.25 10.0055 196.25C7.6447 196.25 6.76406 197.424 5.8834 201.239L0.873253 225.04C-0.606846 230.029 0.873257 233.261 4.11467 234.73C16.1997 241.483 49.1911 248.53 73.6571 248.53Z" fill="#00A868"/>
+                        <path d="M395.04 207.698C364.106 207.698 335.836 184.487 335.836 140.716C335.836 96.945 364.114 74.2955 395.04 74.2955C426.263 74.2955 453.955 96.9154 453.955 140.716C453.955 184.783 426.263 207.698 395.04 207.698ZM395.04 250C456.901 250 501.97 203.882 501.97 140.716C501.97 77.5502 456.901 31.7273 395.04 31.7273C333.468 31.7273 288.103 77.5575 288.103 140.716C288.103 203.875 333.468 250 395.04 250Z" fill="#00A868"/>
+                        <path d="M944 138.369C944 73.4247 906.583 31.7273 847.054 31.7273C791.084 31.7273 742.773 74.6203 742.773 139.838C742.773 209.461 792.261 250 845.285 250C889.769 250 915.434 232.517 931.308 211.225C934.38 207.1 935.009 205.321 935.009 204.17C935.009 203.019 934.269 202.118 931.597 199.742L913.037 183.587C908.596 179.771 907.116 178.591 905.636 178.591C904.156 178.591 903.275 179.476 902.099 180.945C889.429 197.985 871.757 207.675 847.897 207.675C817.8 207.675 797.744 187.284 792.653 154.207H928.592C938.072 154.229 944 151.255 944 138.369ZM845.307 72.5612C877.455 72.5612 894.469 94.1922 895.394 118.096H793.371C798.958 92.4283 816.431 72.5612 845.307 72.5612Z" fill="#00A868"/>
+                    </svg>   
+                </a>
+                <p class="top-options"> Projetos </p>
+                <p class="top-options"> Blog </p>
+                <p class="top-options"> Planos </p>
+                <p class="top-options"> Sobre a Nimbus </p>
+            </div>
+            <div id="turn-member">
+                <a id="login" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/"> Login</a>
+                <a class="register" id="top-link" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Seja Nimbus </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="image" id="top-of-all">
+            <div id="border">
+                <div id="green-square">
+                    <h2 class="initial-phrase" > Quer alavancar <br> o seu negócio? </h2>
+                    <h1 id="bold-initial-phrase"> Vem com Nimbus!!!</h1>
+                    <p id="initial-text"> Enquanto para a concorrência o céu é o limite, com Nimbus nós vamos além das nuvens. Garantindo escalabilidade, elasticidade, segurança, gestão e muito mais... </p>
+                    <a class="register" id="white-link" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Conheça os benefícios Nimbus </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="only-small">
+            <div id="mini-img">
+                <img src="http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/initial-photo.jpg">
+            </div>
+            <div id="mini-txt">
+                <h2 class="initial-phrase" > Quer alavancar o seu negócio? </h2>
+                <h1 id="bold-initial-phrase"> Vem com Nimbus!!!</h1>
+                <p id="initial-text"> Enquanto para a concorrência o céu é o limite, com Nimbus nós vamos além das nuvens. Garantindo escalabilidade, elasticidade, segurança, gestão e muito mais... </p>
+                <a class="register" id="white-link" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Conheça os benefícios Nimbus </a>
+            </div>
+        </div>
+
+        <div id="big-txt">
+            <h1 id="slogan"> Com Nimbus a venda é garantida do melhor jeito para você </h1>
+        </div>
+        
+        <div class="options">
+            <button id="option1" onclick="changeOptions(1)"> Maquininha </button>
+            <button id="option2" onclick="changeOptions(2)"> Link de Pagamento </button>
+            <button id="option3" onclick="changeOptions(3)"> Pix </button>
+            <button id="option4" onclick="changeOptions(4)"> Boleto </button>
+        </div>
+
+        <div class="image" id="image-big-options">
+            <div id="description-options">
+                <p class="name-payment titles" id="title-big-options"> MAQUININHA </p>
+                <h4 class="text-payment-h" id="text-big-options-h"> Receba sua maquininha em menos de um dia </h4>
+                <p class="text-payment-p" id="text-big-options-p"> Com a maquininha da Nimbus, você consegue fazer suas vendas com débito, crédito, voucher, pix e ainda recebe no mesmo dia </p>
+                <a class="register" id="register-payment" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Quero ser Nimbus </a>
+            </div>
+        </div>
+        
+        <div id="gray-block">
+            <img id="image-mini-options" src="http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/card-machine.jpg">
+            <div id="mini-description-options">
+                <p class="name-payment titles" id="title-mini-options"> MAQUININHA </p>
+                <h4 class="text-payment-h" id="text-mini-options-h"> Receba sua maquininha em menos de um dia </h4>
+                <p class="text-payment-p" id="text-mini-options-p"> Com a maquininha da Nimbus, você consegue fazer suas vendas com débito, crédito, voucher, pix e ainda recebe no mesmo dia </p>
+                <a class="register" id="register-payment" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Quero ser Nimbus </a>
+            </div>
+        </div>
+
+        <div id="photos-and-text">  
+            <div class="scenario">
+                <p class="name-payment just-small"> BENEFÍCIOS DA NIMBUS </p>
+                <div class="image" id="photo1"> </div>
+                <div class="text-scenario">
+                    <p class="name-payment just-big"> BENEFÍCIOS DA NIMBUS </p>
+                    <h3> A loja de maquininhas da Nimbus é como coração de mãe, sempre cabe mais um </h3>
+                    <p> Com toda a aplicação dentro da Cloud fornecida pelos serviços da AWS, a loja Nimbus garante escalabilidade, elasticidade e segurança para toda a gestão de vendas de maquininhas. </p>
+                    <a class="register small-button" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Seja Nimbus </a>
+                </div>
+            </div>
+            <div class="scenario" id="little-coffe">
+                <div class="text-scenario">
+                    <p class="name-payment just-big"> SEGURO DA LOJA NIMBUS </p>
+                    <h3> Com a Nimbus, o valor do seguro é mais barato que comprar um cafezinho por dia </h3>
+                    <p> Basta usar os $100 que o Goya deu de graça pra todo mundo e assim ninguém paga nada e todo mundo sai ganhando. </p>
+                    <a class="register small-button" href="http://frontend-elb-1361301890.us-east-1.elb.amazonaws.com:3000/signup"> Seja Nimbus </a>
+                </div>
+                <div class="image" id="photo2"> </div>
+                <p class="name-payment just-small"> SEGURO DA LOJA NIMBUS </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <div id="stone-footer">
+                <a href="https://stone.com.br" target="_blank"> 
+                    <svg width="112" height="48" viewBox="0 0 944 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M532.608 243.535H574.731C575.141 243.564 575.552 243.51 575.94 243.376C576.328 243.241 576.684 243.029 576.988 242.753C577.291 242.477 577.534 242.142 577.704 241.769C577.873 241.396 577.965 240.993 577.973 240.583V124.561C577.973 91.6608 594.18 74.325 622.161 74.325C650.142 74.325 666.053 91.6608 666.053 124.561V240.598C666.061 241.007 666.153 241.411 666.322 241.784C666.492 242.157 666.735 242.492 667.038 242.768C667.342 243.044 667.698 243.256 668.086 243.39C668.474 243.525 668.885 243.579 669.295 243.55H711.418C711.828 243.579 712.239 243.525 712.627 243.39C713.015 243.256 713.371 243.044 713.675 242.768C713.978 242.492 714.222 242.157 714.391 241.784C714.56 241.411 714.652 241.007 714.66 240.598V124.856C714.66 75.2033 686.975 31.7273 622.154 31.7273C557.333 31.7273 529.366 75.2033 529.366 124.856V240.598C529.376 241.006 529.469 241.408 529.639 241.779C529.81 242.151 530.054 242.484 530.357 242.758C530.66 243.033 531.015 243.243 531.402 243.377C531.789 243.51 532.199 243.564 532.608 243.535Z" fill="#00A868"/>
+                        <path d="M242.736 246.184C258.055 246.184 268.068 244.42 272.486 242.657C273.145 242.394 273.716 241.952 274.134 241.38C274.551 240.808 274.799 240.13 274.847 239.424V204.738C274.847 202.679 273.959 201.505 271.31 201.505C269.245 201.505 263.354 202.679 258.64 202.679C240.375 202.679 232.427 195.926 232.427 180.059V82.2582H271.31C272.167 82.2505 272.987 81.9075 273.593 81.303C274.199 80.6984 274.543 79.8807 274.551 79.0258V41.1291C274.543 40.2742 274.199 39.4565 273.593 38.8519C272.987 38.2474 272.167 37.9044 271.31 37.8967H230.955V4.9963C230.955 1.46863 229.474 0 226.825 0H187.055C183.821 0 182.348 1.47601 182.348 4.9963V185.07C182.348 228.849 206.792 246.184 242.736 246.184Z" fill="#00A868"/>
+                        <path d="M73.6571 248.53C121.087 248.53 154.966 219.446 154.966 181.549C154.966 138.951 126.682 126.619 88.0955 118.39L68.943 114.28C54.5121 111.047 46.5565 104.287 46.5565 92.8332C46.5565 78.1469 61.2835 70.2133 81.6127 70.2133C110.186 70.2133 129.627 83.1358 132.572 83.1358C133.391 83.0816 134.18 82.8073 134.855 82.3422C135.53 81.877 136.066 81.2383 136.406 80.4938L144.065 51.9993C145.546 48.1764 145.242 47.2982 142.585 45.8296C125.498 37.0178 107.233 32.0215 81.3092 32.0215C33.2948 32.0215 0 59.6377 0 96.3609C0 131.047 26.812 150.117 65.1244 158.353L84.5655 162.464C100.18 165.697 108.987 171.866 108.987 185.084C108.987 198.597 98.3822 210.346 73.3389 210.346C37.9867 210.346 13.8315 196.25 10.0055 196.25C7.6447 196.25 6.76406 197.424 5.8834 201.239L0.873253 225.04C-0.606846 230.029 0.873257 233.261 4.11467 234.73C16.1997 241.483 49.1911 248.53 73.6571 248.53Z" fill="#00A868"/>
+                        <path d="M395.04 207.698C364.106 207.698 335.836 184.487 335.836 140.716C335.836 96.945 364.114 74.2955 395.04 74.2955C426.263 74.2955 453.955 96.9154 453.955 140.716C453.955 184.783 426.263 207.698 395.04 207.698ZM395.04 250C456.901 250 501.97 203.882 501.97 140.716C501.97 77.5502 456.901 31.7273 395.04 31.7273C333.468 31.7273 288.103 77.5575 288.103 140.716C288.103 203.875 333.468 250 395.04 250Z" fill="#00A868"/>
+                        <path d="M944 138.369C944 73.4247 906.583 31.7273 847.054 31.7273C791.084 31.7273 742.773 74.6203 742.773 139.838C742.773 209.461 792.261 250 845.285 250C889.769 250 915.434 232.517 931.308 211.225C934.38 207.1 935.009 205.321 935.009 204.17C935.009 203.019 934.269 202.118 931.597 199.742L913.037 183.587C908.596 179.771 907.116 178.591 905.636 178.591C904.156 178.591 903.275 179.476 902.099 180.945C889.429 197.985 871.757 207.675 847.897 207.675C817.8 207.675 797.744 187.284 792.653 154.207H928.592C938.072 154.229 944 151.255 944 138.369ZM845.307 72.5612C877.455 72.5612 894.469 94.1922 895.394 118.096H793.371C798.958 92.4283 816.431 72.5612 845.307 72.5612Z" fill="#00A868"/>
+                    </svg>   
+                </a>
+            </div>
+            <div id="social-media">
+                <a href="https://github.com/2023M7T1-Inteli/Grupo-2" target="_blank"> <ion-icon name="logo-github"> </ion-icon> </a>
+                <a href="https://www.instagram.com/stone/" target="_blank"> <ion-icon name="logo-instagram"> </ion-icon> </a>
+                <a href="https://www.youtube.com/channel/UCk4L4JykgoDkN8YeuxkNqIQ" target="_blank"> <ion-icon name="logo-youtube"> </ion-icon> </a>
+                <a href="https://www.linkedin.com/company/stone-co/" target="_blank"> <ion-icon name="logo-linkedin"> </ion-icon> </a>
+            </div>  
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        
+        // * Change styles, text and images in multi-link menu
+        // * @param option: qual botão foi clicado na página, entre: maquininha, link de pagamento, pix e boleto
+
+        function changeOptions(option){
+            var buttons = [ document.getElementById("option1"), document.getElementById("option2"), document.getElementById("option3"), document.getElementById("option4") ]
+            
+            var title_B = document.getElementById("title-big-options")
+            var textH_B = document.getElementById("text-big-options-h")
+            var textP_B = document.getElementById("text-big-options-p")
+            var image_B = document.getElementById("image-big-options")
+
+            var title_M = document.getElementById("title-mini-options")
+            var textH_M = document.getElementById("text-mini-options-h")
+            var textP_M = document.getElementById("text-mini-options-p")
+            var image_M = document.getElementById("image-mini-options")
+
+            var width = window.innerWidth
+
+            switch (option) {
+
+                case 1:
+
+                    if(width > 642) {
+                        buttons[0].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 60px;"
+                    } else {
+                        buttons[0].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 40px;"
+                    }
+
+                    buttons[1].style.cssText = ""
+                    buttons[2].style.cssText = ""
+                    buttons[3].style.cssText = ""
+                    
+                    title_B.innerHTML = "MAQUININHA"
+                    textH_B.innerHTML = "Receba a sua maquininha em um piscar de olhos"
+                    textH_B.style.fontSize = "15px";
+                    textP_B.innerHTML = "Com a maquininha da Nimbus, você consegue fazer suas vendas com débito, crédito, voucher, pix e ainda recebe no mesmo dia."
+                    textP_B.style.fontSize = "14px";
+                    image_B.style.backgroundImage = "url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/card-machine.jpg)"
+
+                    title_M.innerHTML = "MAQUININHA"
+                    textH_M.innerHTML = "Receba a sua maquininha em um piscar de olhos"
+                    textH_M.style.fontSize = "15px";
+                    textP_M.innerHTML = "Com a maquininha da Nimbus, você consegue fazer suas vendas com débito, crédito, voucher, pix e ainda recebe no mesmo dia."
+                    textP_M.style.fontSize = "14px";
+                    image_M.src = "http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/card-machine.jpg"
+
+                    break
+
+                case 2:
+                    buttons[0].style.cssText = "background: none; color: rgb(76, 76, 77);"
+
+                    if(width > 642) {
+                        buttons[1].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 60px;"
+                    } else {
+                        buttons[1].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 40px;"
+                    }
+    
+                    buttons[2].style.cssText = ""
+                    buttons[3].style.cssText = ""
+
+                    title_B.innerHTML = "LINK DE PAGAMENTO"
+                    textH_B.innerHTML = "Não ter maquininha ou site não é mais motivo de perder uma venda"
+                    textH_B.style.fontSize = "13px";
+                    textP_B.innerHTML = "Com os serviços da Nimbus, basta gerar um link e assim qualquer pessoa de qualquer lugar do mundo pode comprar o seu produto!"
+                    textP_B.style.fontSize = "13px";
+                    image_B.style.backgroundImage = "url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/click-here.jpg)"
+
+                    title_M.innerHTML = "LINK DE PAGAMENTO"
+                    textH_M.innerHTML = "Não ter maquininha ou site não é mais motivo de perder uma venda"
+                    textH_M.style.fontSize = "14px";
+                    textP_M.innerHTML = "Com os serviços da Nimbus, basta gerar um link e assim qualquer pessoa de qualquer lugar do mundo pode comprar o seu produto!"
+                    textP_M.style.fontSize = "13px";
+                    image_M.src = "http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/click-here.jpg"
+
+                    break
+
+                case 3:
+                    buttons[0].style.cssText = "background: none; color: rgb(76, 76, 77);"
+                    buttons[1].style.cssText = ""
+
+                    if(width > 642) {
+                        buttons[2].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 60px;"
+                    } else {
+                        buttons[2].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 40px;"
+                    }
+
+                    buttons[3].style.cssText = ""
+
+                    title_B.innerHTML = "PIX"
+                    textH_B.innerHTML = "Piscou, vendeu, recebeu"
+                    textH_B.style.fontSize = "16px";
+                    textP_B.innerHTML = "Por meio do pagamento por pix, a sua venda não demora nem o tempo de piscar os olhos de tão rápida que é!"
+                    textP_B.style.fontSize = "15px";
+                    image_B.style.backgroundImage = "url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/pix.jpg)"
+
+                    title_M.innerHTML = "PIX"
+                    textH_M.innerHTML = "Piscou, vendeu, recebeu"
+                    textH_M.style.fontSize = "16px";
+                    textP_M.innerHTML = "Por meio do pagamento por pix, a sua venda não demora nem o tempo de piscar os olhos de tão rápida que é!"
+                    textP_M.style.fontSize = "14px";
+                    image_M.src = "http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/pix.jpg"
+
+                    break
+
+                case 4:
+                    buttons[0].style.cssText = "background: none; color: rgb(76, 76, 77);"
+                    buttons[1].style.cssText = ""
+                    buttons[2].style.cssText = ""
+
+                    if(width > 642) {
+                        buttons[3].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 60px;"
+                    } else {
+                        buttons[3].style.cssText = "background-color: white; color: #00A868; border-radius: 46px; height: 40px;"
+                    }
+
+                    title_B.innerText = "BOLETO"
+                    textH_B.innerHTML = "Gere boletos sem taxa e só pague quando receber"
+                    textH_B.style.fontSize = "14px";
+                    textP_B.innerHTML = "Se por algum motivo for necessário fazer um boleto, não se preocupe. As taxas só são cobradas sobre boletos pagos"
+                    textP_B.style.fontSize = "14px";
+                    image_B.style.backgroundImage = "url(http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/bill.jpg)"
+
+                    title_M.innerText = "BOLETO"
+                    textH_M.innerHTML = "Gere boletos sem taxa e só pague quando receber"
+                    textH_M.style.fontSize = "14px";
+                    textP_M.innerHTML = "Se por algum motivo for necessário fazer um boleto, não se preocupe. As taxas só são cobradas sobre boletos pagos"
+                    textP_M.style.fontSize = "14px";
+                    image_M.src = "http://s3-frontend-nimbbbus.s3-website-us-east-1.amazonaws.com/bill.jpg"
+
+                    break
+            }
+
+        }
+    </script>
+</body>
+</html>

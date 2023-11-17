@@ -1,0 +1,376 @@
+.body {
+  overflow-y: scroll;
+}
+
+.abc-rectangle {
+  width: 1250px;
+  height: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 50px;
+}
+
+.abc-nimbbbus-text {
+  color: #00A868;
+  margin-right: auto;
+}
+
+.abc-user-circle {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/user.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 70px;
+  border: #000 2px solid;
+}
+
+.abc-additional-rectangle1 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+}
+
+.abc-additional-rectangle2 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.abc-additional-rectangle3 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.abc-text {
+  font-size: 30px;
+  color: #00A868;
+  margin-left: 500px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.abc-subtext {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 500px;
+}
+
+.abc-price-home {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 505px;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+.abc-bold-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.abc-bold-price {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.abc-larger-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.abc-larger-text2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.abc-button-container {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 100px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.abc-essential-pro {
+  font-size: 30px;
+  color: #00A868;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.abc-subtext2 {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  top: 100px;
+  left: 22px;
+}
+
+.abc-price-info {
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.abc-bold-text2 {
+  font-weight: bold;
+}
+
+.abc-bold-price2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.abc-bold_month {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.abc-button-container2 {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  height: 50px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.abc-flex-text {
+  position: absolute;
+  top: 950px;
+  right: 385px;
+  font-size: 30px;
+  color: #00A868;
+}
+
+.abc-subtext3 {
+  font-size: 16px;
+  color: #000;
+  position: absolute;
+  top: 1050px;
+  left: 765px;
+}
+
+.abc-taxas-flexiveis {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 1120px;
+  right: 365px;
+}
+
+.abc-button-container3 {
+  cursor: pointer;
+  position: absolute;
+  top: 1200px;
+  right: 330px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.abc-ton-image {
+  position: absolute;
+  left: 30px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.abc-clickable-text {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 24px;
+  color: #00A868;
+}
+
+.abc-stone-image {
+  position: absolute;
+  margin-left: 540px;
+  margin-top: 30px;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.abc-clickable-text2 {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 455px;
+  color: #00A868;
+}
+
+.abc-clickable-text3 {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 295px;
+  color: #00A868;
+}
+
+.abc-stone-image2 {
+  position: absolute;
+  margin-left: 30px;
+  top: 1050px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;
+}
+
+.smaller-text {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .abc-rectangle {
+    width: 100%;
+    padding: 0 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .abc-nimbbbus-text {
+    margin: 0;
+  }
+
+  .abc-user-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .abc-additional-rectangle1,
+  .abc-additional-rectangle2,
+  .abc-additional-rectangle3 {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abc-text,
+  .abc-subtext,
+  .abc-price-home,
+  .abc-essential-pro,
+  .abc-subtext2,
+  .abc-price-info,
+  .abc-flex-text,
+  .abc-subtext3,
+  .abc-taxas-flexiveis {
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+
+  .abc-button-container,
+  .abc-button-container2,
+  .abc-button-container3 {
+    margin: 10px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  br {
+    display: block;
+  }
+
+  .abc-ton-image,
+  .abc-stone-image,
+  .abc-stone-image2 {
+    width: 120px;
+    position: relative;
+    margin: 0 0;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .abc-clickable-text,
+  .abc-clickable-text2,
+  .abc-clickable-text3 {
+    margin: 5px;
+  }
+
+  .abc-essential-pro,
+  .abc-subtext2,
+  .abc-price-info,
+  .abc-flex-text,
+  .abc-subtext3,
+  .abc-taxas-flexiveis {
+    top: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+}

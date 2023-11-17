@@ -1,0 +1,625 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F2F4F7;           
+}
+
+header {
+    background-color: white;
+    padding: 0.5% 9%;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.navbar {
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.navbar p {
+    margin: 0;
+}
+
+.top-options {
+    visibility: visible;
+}
+
+#items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px 0;
+    width: 50%;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#turn-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px 0;
+    gap: 20px;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+#login {
+    display: flex;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 102px;
+    height: 38px;
+    border-radius: 46px;
+    border: rgba(0, 0, 0, 0.5) 1px solid;
+    transition: box-shadow 0.2s ease;
+}
+
+#login:hover {
+    background-color: rgb(189, 244, 252);
+    box-shadow: 0 0 7px 4px #a9ebf5;
+}
+
+.register{
+    display: flex;
+    background-color: #00A868;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    height: 38px;
+    border-radius: 46px;
+    transition: box-shadow 0.2s ease;
+}
+
+#top-link {
+    padding: 6px
+}
+
+.register:hover{
+    background-color: #00975d;
+    box-shadow: 0 0 7px 4px #a9ebf5;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#green-background {
+    background-color: #00975d;
+    width: 100vw;
+    height: 50vh;
+}
+
+.image {
+    display: block;
+    flex-shrink: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#top-of-all {
+    background-image: url(http://landing-page-nimbbbus.s3-website-us-east-1.amazonaws.com/initial-photo.jpg);
+    width: 80%;
+    height: 600px;
+    border-radius: 0px 0px 18px 18px;  
+}
+
+#only-small {
+    display: none;
+}
+
+#border {
+    height: 85%;
+    margin: 30px;
+    border: #00A868 10px solid;
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#green-square {
+    width: 450px;
+    height: 50vh;
+    background-color: #00A868;
+    border-radius: 0px 18px 0px 0px;
+    padding: 20px 0 0 20px;
+}
+
+.initial-phrase {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0;
+}
+
+#bold-initial-phrase {
+    color: white;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#initial-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 25px 0;
+}
+
+#white-link {
+    background-color: white;
+    color: black;
+    transition: box-shadow 0.2s ease;
+}
+
+@media (min-width: 850px) and (max-width: 1250px) {
+    
+    .top-options {
+        display: none;
+    }
+
+    #green-square {
+        width: 350px;
+        height: 40vh;
+    }
+
+    .initial-phrase {
+        font-size: 27px;
+    }
+
+    #bold-initial-phrase {
+        font-size: 27px;
+    }
+    
+    #initial-text {
+        font-size: 17px;
+        margin: 10px 0 15px 0;
+    }
+
+    #white-link {
+        height: 25px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .top-options {
+        display: none;
+    }
+
+    #header {
+        padding: 0.5% 9%;
+    }
+
+    #turn-member {
+        padding: 0;
+    }
+
+    #login {
+        padding: 2px;
+    }
+
+    #top-link {
+        padding: 2px;
+        height: 39px;
+    }
+
+    #top-of-all {
+        display: none;
+    }
+
+    #only-small {
+        display: flex;
+        flex-direction: column;
+        background-color: #00975d;
+        width: 80%;
+        height: 600px;
+        border-radius: 0px 0px 18px 18px;  
+    }
+
+    #mini-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mini-txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #initial-text {
+        text-align: center;
+        font-size: 17px;
+        width: 60vw;
+        margin: 20px 0 30px 0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+    #mini-img img {
+        margin: 12px 0 12px;
+        width: 350px;
+        height: 271.5px;
+        border-radius: 9px;
+    }
+
+    .initial-phrase {
+        font-size: 25px;
+    }
+    
+    #bold-initial-phrase {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 499.9px) {
+    #mini-img img {
+        margin-top: 20px;
+        width: 70vw;
+        height: 52.5vw;
+    }
+
+    .initial-phrase {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #bold-initial-phrase {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #only-small {
+        gap: 3vh;
+    }
+}
+
+#white-link:hover {
+    background-color: rgb(189, 244, 252);
+    box-shadow: 0 0 7px 4px #a9ebf5;
+}
+
+#big-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#slogan {
+    font-weight: 500;
+    margin: 130px 0px 40px;
+}
+
+.options {
+    display: flex;
+    width: 430px;
+    height: 80px;
+    border-radius: 250px;
+    background-color: rgb(219, 221, 223);
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.options button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: rgb(76, 76, 77);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#option1 {
+    background-color: white; 
+    color: #00A868; 
+    border-radius: 46px; 
+    height: 60px;
+}
+
+#option3 {
+    width: 60px;
+}
+
+#image-big-options {
+    width: 55%;
+    height: 450px;
+    background-image: url(http://landing-page-nimbbbus.s3-website-us-east-1.amazonaws.com/card-machine.jpg);
+    border-radius: 18px;
+    margin-bottom: 130px;    
+}
+
+#description-options {
+    background-color: rgb(255, 255, 255, 1);
+    width: 230px;
+    height: 30vh;
+    padding: 15px;
+    border-radius: 9px;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-payment {
+    font-family: 'Oswald', sans-serif;
+    color: #017649;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.text-payment-h {
+    margin: 0;
+    font-size: 15px;
+}
+
+.text-payment-p {
+    margin: -10px 0 0 0;
+    font-size: 14px;
+}
+
+#register-payment {
+    display: flex;
+    padding: 6px;
+    font-size: 13px;
+    height: 20px;
+    justify-content: flex-end;
+}
+
+#gray-block {
+    display: none;
+}
+
+@media (min-width: 1070px) and (max-width: 1400px) {
+    #slogan {
+        font-size: 27px;
+        margin-top: 75px;
+    }
+
+    #image-big-options{
+        width: 70vw; 
+    }   
+
+    #gray-block {
+        display: none;
+    }
+
+    #image-big-options {
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width: 1070px) {
+
+    #slogan {
+        font-size: 24px;
+        width: 80%;
+        margin-top: 37px;
+    }
+
+    #image-big-options {
+        display: none;
+    }
+
+    #description-options {
+        display: none;
+    }
+
+    #gray-block {
+        display: flex;
+        width: 80%;
+        background-color: rgb(191, 195, 200);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    #gray-block img {
+        width: 500px;
+        border-radius: 10px;
+    }
+    
+    #mini-description-options{
+        background-color: rgb(255, 255, 255, 1);
+        width: 470px;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+@media (max-width: 642px) {
+    #slogan {
+        font-size: 22px;
+        width: 80%
+    }
+
+    #gray-block img {
+        width: 100%;
+    }
+    
+    #mini-description-options{
+        width: 95%;
+    }
+
+    .options {
+        width: 320px;
+        height: 60px;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .options button {
+        font-size: 12px;
+    }
+
+    #option1 {
+        height: 40px;
+    }
+}
+
+#photos-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scenario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 130px;
+}
+
+
+.text-scenario {
+    width: 41rem;
+    height: fit-content;
+}
+
+#photo1 {
+    background-image: url(http://landing-page-nimbbbus.s3-website-us-east-1.amazonaws.com/cloud.jpg);
+    width: 46%;
+    height: 327px;
+    border-radius: 18px;
+}
+
+#photo2 {
+    background-image: url(http://landing-page-nimbbbus.s3-website-us-east-1.amazonaws.com/little-coffee.jpg);
+    width: 45%;
+    height: 289px;
+    border-radius: 18px;
+}
+
+.just-small {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .scenario {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .name-payment {
+        margin-bottom: -15px
+    }
+
+    #little-coffe{
+        flex-direction: column-reverse;
+    }
+
+    .text-scenario {
+        width: 60%;
+        text-align: center;
+    }
+
+    .text-scenario a {
+        margin: 40px auto 0;
+    }
+
+    #photo1 {
+        width: 60%;
+    }
+
+    #photo2 {
+        width: 60%; 
+    }
+
+    .just-small {
+        display: block;
+    }
+
+    .just-big {
+        display: none;
+    }
+
+    .small-button {
+        width: 40%;
+    }
+}
+
+footer {
+    background-color: rgba(32,37,42);
+    padding: 0.5% 9%;
+}
+
+#footer {
+    display: flex;
+    flex: row;
+    align-items: center;
+    width: 100%;
+}
+
+#stone-footer {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+#social-media a {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    #social-media {
+        gap: 24px;
+    }
+
+    #social-media a {
+        font-size: 20px;
+    }
+}

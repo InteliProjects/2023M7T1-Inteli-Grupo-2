@@ -1,0 +1,203 @@
+/* login-styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F4F7; /* Define a cor de fundo para toda a página */
+}
+
+/* Container principal que limita o tamanho da tela */
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinhar no topo da página */
+  background-color: #F2F4F7; /* Define a cor de fundo para a área fora do retângulo */
+}
+
+/* Container do retângulo com tamanho específico e posicionamento */
+.container {
+  width: 600px;
+  background-color: #fff; /* Define a cor de fundo para o retângulo */
+  margin-top: 50px; /* Desce o retângulo em relação ao topo da página */
+  display: flex;
+  flex-direction: column; /* Alinhar o conteúdo dentro do retângulo ao topo */
+  justify-content: flex-start; /* Alinhar o conteúdo dentro do retângulo ao topo */
+  border-radius: 15px;
+}
+
+.centered-text-login {
+  /* O restante dos estilos CSS permanece inalterado */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: fit-content;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 60px;
+  color: #00A868;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.search-container-email,
+.search-container-password, .search-container-email-error, .search-container-email-error {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 500px;
+  height: 45px;
+}
+
+.search-container-email-error, .search-container-email-error
+{
+  border: 1px solid rgba(221,79,64);
+}
+
+.email-label {
+  color: #000;
+  position: absolute;
+  top: 145px;
+  margin-left: -465px;
+}
+
+.password-label {
+  color: #000;
+  position: absolute;
+  top: 242px;
+  margin-left: -465px;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+.enter-button {
+  background-color: #00A868;
+  color: #fff;
+  border-radius: 25px;
+  width: 450px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #016941;
+  opacity: 0.8;
+}
+
+.register-link {
+  margin-top: 10px; /* Reduz a margem superior para aproximar do texto abaixo */
+  font-size: 15px;
+  color: #000000;
+}
+
+.click-here {
+  color: #00A868;
+  cursor: pointer;
+}
+
+.click-here:hover {
+  color: #016941;
+}
+
+.search-container-password {
+  position: relative; /* Adicione essa propriedade para permitir o posicionamento absoluto do ícone */
+}
+
+.eye-icon {
+  position: absolute; /* Posicionamento absoluto */
+  top: 50%; /* Centraliza verticalmente no centro da barra de pesquisa */
+  right: 20px; /* Posiciona o ícone no lado direito com um espaço de 10px */
+  cursor: pointer; /* Mostra o cursor como ponteiro quando passar sobre o ícone */
+  width: 25px;
+  margin-top: -10px;
+}
+
+.error {
+  color: rgba(221,79,64);
+  width: 100%;
+  margin-left: 6rem;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f3f3f3; /* Light grey */
+  border-top: 1px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px){
+
+/* Container do retângulo com tamanho específico e posicionamento */
+.container {
+  width: 100%;
+  background-color: #F2F4F7; /* Define a cor de fundo para o retângulo */
+  margin-top: 0; /* Desce o retângulo em relação ao topo da página */
+  border-radius: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.search-container-email,
+.search-container-password, .search-container-email-error, .search-container-email-error {
+  width: 80%;
+}
+
+.email-label {
+  top: 110px;
+  margin-left: -260px;
+}
+
+.password-label {
+  top: 210px;
+  margin-left: -260px;
+}
+
+input {
+  width: 90%;
+  background: #F2F4F7;
+}
+
+.enter-button {
+  background-color: #00A868;
+  color: #fff;
+  border-radius: 25px;
+  width: 80%;
+}
+}

@@ -1,0 +1,364 @@
+.body{
+  overflow-y: scroll;
+
+}
+.rectangle {
+  width: 1250px;
+  height: 100px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 50px;
+}
+
+.nimbbbus-text {
+  color: #00A868;
+  margin-right: auto;
+}
+
+.user-circle {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/user.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 70px;
+  border: #000 2px solid;
+}
+
+.additional-rectangle1 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+}
+
+.additional-rectangle2 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.additional-rectangle3 {
+  width: 700px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  border-radius: 20px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.text{
+  font-size: 40px;
+  color: #00A868;
+  margin-left: 550px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.subtext {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  margin-top: 75px; 
+  margin-left: 500px; 
+}
+
+.price-home {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 505px;
+  word-wrap: break-word;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.bold-price {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.button-container {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 100px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.essential-pro {
+  font-size: 40px;
+  color: #00A868;
+  position: absolute;
+  top: 30px;
+  left: 20px; 
+}
+
+.subtext2 {
+  font-size: 15px;
+  color: #000;
+  position: absolute;
+  top: 100px;
+  left: 22px; 
+}
+
+.price-info {
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  top: 150px; 
+  left: 23px;
+}
+
+.bold-text2 {
+  font-weight: bold;
+}
+
+.bold-price2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000;
+}
+
+.button-container2 {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px; 
+  height: 50px;
+  left: 15px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 180px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.flex-text {
+  position: absolute;
+  top: 950px;
+  right: 395px;
+  font-size: 40px;
+  color: #00A868;
+}
+
+.subtext3 {
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  top: 1010px; 
+  left:765px; 
+}
+
+.taxas-flexiveis {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #000;
+  position: absolute;
+  top: 1080px; 
+  right: 370px;
+}
+
+.button-container3 {
+  cursor: pointer;
+  position: absolute;
+  top: 1200px; 
+  right: 350px; 
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  background-color: #00A868;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.ton-image{
+  position: absolute;
+  left: 30px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;  
+}
+
+.clickable-text {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 25px;
+  color: #00A868;
+}
+
+.stone-image{
+  position: absolute;
+  margin-left: 540px;
+  margin-top:30px ;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;  
+}
+
+.clickable-text2{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 298px;
+  margin-left: 555px;
+  color: #00A868;
+}
+.clickable-text3{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 295px;
+  color: #00A868;
+}
+
+.stone-image2{
+  position: absolute;
+  margin-left: 30px;
+  top: 1050px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 150px;  
+}
+
+.smaller-text{
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .rectangle {
+    width: 100%;
+    padding: 0 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nimbbbus-text {
+    margin: 0;
+  }
+
+  .user-circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .additional-rectangle1,
+  .additional-rectangle2,
+  .additional-rectangle3 {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .text, .essential-pro, .flex-text {
+    font-size: 20px;
+  }
+
+  .price-home .price-info{
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .text,
+  .subtext,
+  .price-home,
+  .essential-pro,
+  .subtext2,
+  .price-info,
+  .flex-text,
+  .subtext3,
+  .taxas-flexiveis {
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+
+  .button-container,
+  .button-container2,
+  .button-container3 {
+    margin: 10px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  br {
+    display: block;
+  }
+
+  .ton-image,
+  .stone-image,
+  .stone-image2 {
+    width: 120px;
+    position: relative;
+    margin: 0 0;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .clickable-text,
+  .clickable-text2,
+  .clickable-text3 {
+    margin: 5px;
+  }
+
+  .essential-pro, .subtext2, .price-info, .flex-text, .subtext3, .taxas-flexiveis {
+    top: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+  
+}

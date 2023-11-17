@@ -1,0 +1,309 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 70%; 
+  height: 300%;
+  max-height: 500px;
+  overflow-y: auto;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.close-modal {
+  background-color: #00A868;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  position: relative; 
+}
+
+.corner-text {
+  position: absolute;
+ margin-top: 15px;
+  left: 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.rectangle-below-ton {
+  width: 810px;
+  height: 100px; 
+  background-color: rgba(143, 209, 170, 1);
+  position: absolute;
+  bottom: 355px;
+  left: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle-text {
+  font-size: 14px; 
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 80%; 
+}
+
+.recommended-text {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: -290px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.second-rectangle {
+  width: 810px;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 10px; 
+  border-radius: 20px;
+  border: 0.5px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-rectangle {
+  width: 810px;
+  height: 483px;
+  background-color: #fff;
+  margin-top: 40px;
+  border: 0.5px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #000;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #000;
+  margin-top: 35px; 
+}
+
+.line:first-child {
+  margin-top: 20px; 
+}
+
+.flag-images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: -20px;
+  margin-top: -30px;
+}
+
+
+.flag-image{
+  width: 50px;
+  height: 40px;
+  margin-right: 10px; 
+}
+
+.line:last-child{
+  margin-top: 35px; 
+}
+
+.tax-promotom-text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: -600px;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 770px;
+  height: 40px;
+  padding: 0 20px;
+  font-weight: bold;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+  border-bottom: 1px solid #000; 
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 770px;
+  height: 40px;
+  padding: 0 20px;
+  border-top: 1px solid #000;
+}
+
+.left-word {
+  flex: 1;
+  text-align: left;
+}
+
+.center-word {
+  flex: 1;
+  text-align: center;
+  margin-left: 300px; 
+  color: #00A868;
+}
+
+.right-word {
+  flex: 1;
+  text-align: right;
+  margin-left: 20px; 
+}
+
+.flag-image{
+  width: 40px;
+  height: 30px;
+  margin-right: 10px; 
+}
+
+.choose-ton-button {
+  margin-top: 20px;
+  background-color: #00A868;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 180px;
+  height: 50px;
+  margin-left: 650px;
+}
+
+/* Your existing styles */
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 90%;
+    max-width: 300px; /* Adjust the max-width according to your design */
+    height: auto;
+    max-height: 80vh; /* Limit the height for smaller screens */
+    overflow-y: scroll;
+  }
+
+  .corner-text {
+    margin-top: 5px;
+    left: 10px;
+    font-size: 24px;
+  }
+
+  .rectangle-below-ton {
+    width: 100%;
+    top: 70px;
+    left: 0;
+  }
+
+  .rectangle-text {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .recommended-text {
+    font-size: 18px;
+    margin-top: 150px;
+    margin-left: 0;
+  }
+
+  .second-rectangle {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+
+  .third-rectangle {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .flag-images {
+    margin-left: -10px;
+    margin-top: -15px;
+  }
+
+  .flag-image {
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .tax-promotom-text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: -140px;
+  }
+
+  .table-header,
+  .table-row {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .left-word,
+  .center-word,
+  .right-word {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .choose-ton-button {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: auto;
+  }
+
+}
+
+
+
+
+
